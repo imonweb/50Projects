@@ -1,24 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 :root {
   --line-border-fill: #3498db;
   --line-border-empty: #e0e0e0;
 }
 
-@import url('https://fonts.google.com/css?family=Muli&display=swap');
+* {
+  box-sizing: border-box;
+}
 
 body {
-   font-family: "Muli", sans-serif;
-   background-color: #f6f7fb;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   overflow: hidden;
+  background-color: #f6f7fb;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
 
 .container {
@@ -35,7 +34,7 @@ body {
 }
 
 .progress-container::before {
-  content: "";
+  content: '';
   background-color: var(--line-border-empty);
   position: absolute;
   top: 50%;
@@ -68,7 +67,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 3px solid var(--line-border-empty);
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
 
 .circle.active {
@@ -78,7 +77,7 @@ body {
 .btn {
   background-color: var(--line-border-fill);
   color: #fff;
-  border: none;
+  border: 0;
   border-radius: 6px;
   cursor: pointer;
   font-family: inherit;
@@ -96,6 +95,6 @@ body {
 }
 
 .btn:disabled {
-  background-color: var(--line-border-impty);
-  cursor: pointer;
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
 }
