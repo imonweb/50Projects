@@ -1,1 +1,1 @@
-## 50 Projects in 50 Days (Not possible due to other projects)
+## 50 Projects in 50 Days
